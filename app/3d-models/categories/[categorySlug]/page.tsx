@@ -15,7 +15,8 @@ export default async function CategoryPage({params, searchParams}:{
     }>
 }){
 
-  const {search, sort, page} = getQueryParams(await searchParams)
+ const {search, sort, page} = getQueryParams(await searchParams)
+
 
 
   const {categorySlug} = await params
@@ -25,7 +26,17 @@ export default async function CategoryPage({params, searchParams}:{
     notFound()
   }
 
-  const models = await getModels({sort, categorySlug, search, page, modelsPerPage:MODELS_PER_PAGE})
+const models = await getModels({sort, categorySlug, search, page, modelsPerPage:MODELS_PER_PAGE})
+//   const models = await getModels({
+//   sort: sort ?? undefined,
+//   categorySlug,
+//   search: search ?? undefined,
+//   page,
+//   modelsPerPage: MODELS_PER_PAGE
+// })
+
+
+  
   const modelCount = await getModelCount({search, categorySlug})
 
   const totalPages = Math.max(1, Math.ceil(modelCount/MODELS_PER_PAGE))

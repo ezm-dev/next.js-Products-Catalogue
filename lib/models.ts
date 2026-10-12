@@ -1,9 +1,9 @@
 import { getDBConnection } from '@/lib/db'
 
 export async function getModels({search, sort, categorySlug, page, modelsPerPage}:{
-  search?:string,
-  sort?:string,
-  categorySlug?:string,
+  search?:string | null,
+  sort?:string | null ,
+  categorySlug?:string | null,
   page:number,
   modelsPerPage:number
 }){
