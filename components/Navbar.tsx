@@ -7,7 +7,7 @@ export default function NavBar(){
     <header className="w-full bg-white">
       <nav className="flex justify-between px-6 py-4 pr-2">
         <Link href="/">
-        <h1>Products Catalogue</h1>
+        <h1 className="text-4xl font-bold ">Products Catalogue</h1>
           {/* <div className="relative cursor-pointer">
 
             <Image
