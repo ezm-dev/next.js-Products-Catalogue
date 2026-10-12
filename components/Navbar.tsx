@@ -7,7 +7,7 @@ export default function NavBar(){
     <header className="w-full bg-white">
       <nav className="flex justify-between px-6 py-4 pr-2">
         <Link href="/">
-        <h1 className="text-5xl font-bold text-orange-500  ">Print Forge</h1>
+        <h1 className="text-3xl font-bold text-orange-600  ">🐾Print Forge🐾</h1>
           {/* <div className="relative cursor-pointer">
 
             <Image
