@@ -7,7 +7,8 @@ export default function NavBar(){
     <header className="w-full bg-white">
       <nav className="flex justify-between px-6 py-4 pr-2">
         <Link href="/">
-          <div className="relative cursor-pointer">
+        <h1>Products Catalogue</h1>
+          {/* <div className="relative cursor-pointer">
 
             <Image
               width={200}
@@ -24,7 +25,7 @@ export default function NavBar(){
               alt="PrintForge Logo"
               className="w-[40px] h-auto block md:hidden"
             />
-          </div>
+          </div> */}
         </Link>
         <ul className="flex items-center gap-1.5">
           <NavLink href="/3d-models">3D Models</NavLink>
