@@ -7,7 +7,7 @@ export default function NavBar(){
     <header className="w-full bg-white">
       <nav className="flex justify-between px-6 py-4 pr-2">
         <Link href="/">
-        <h1 className="text-4xl font-bold ">Products Catalogue</h1>
+        <h1 className="text-4xl- font-bold text-orange-500  ">Products Catalogue</h1>
           {/* <div className="relative cursor-pointer">
 
             <Image
@@ -35,15 +35,3 @@ export default function NavBar(){
     </header>
   )
 }
-
-/*  
-CHALLENGE - NavLink Component  
-- Create a `NavLink.tsx` component  
-- Accept `href` and `children` as props  
-- Move one of the `<li>` elements from `Navbar.tsx` into the component  
-- Replace the hardcoded values with props  
-- Use `NavLink` inside `Navbar.tsx`
-  
-DOCS:
-- https://react.dev/learn/passing-props-to-a-component#passing-props-to-a-component 
-*/
